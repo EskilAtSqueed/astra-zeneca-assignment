@@ -6,5 +6,4 @@ export const IshowGuard = (obj: any): obj is Ishow =>
   "name" in obj &&
   "genres" in obj &&
   Array.isArray(obj.genres) &&
-  obj.genres.length > 0 &&
   "summary" in obj;
